@@ -1,0 +1,171 @@
+h1 {
+  margin-top: 1px;
+  color: black;
+  background: linear-gradient(to top, #ffff00, white);
+  text-align: center;
+  text-transform: uppercase;
+  font: "Jura", sans-serif; }
+
+.normal {
+  list-style-type: upper-latin; }
+
+h3 {
+  color: #003399;
+  margin-left: 5%; }
+
+time {
+  margin-left: 5%; }
+
+hr {
+  color: yellow; }
+
+ul {
+  color: black;
+  background-color: #99ccff; }
+
+p {
+  margin-left: 1%; }
+
+.main__aside {
+  background-color: #ccffff; }
+
+ol.normal {
+  list-style-type: upper-latin; }
+
+.horizontal {
+  margin: 30px auto;
+  background-color: #99ccff; }
+
+.horizontal ul {
+  list-style: none; }
+
+.menu > li {
+  display: inline-block;
+  border: outset; }
+
+.menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  font-family: "Jura", sans-serif;
+  text-decoration: none; }
+
+.menu li a:hover {
+  color: #ce7d35;
+  transition: all .3s; }
+
+.submenu {
+  position: absolute;
+  background: black;
+  width: 80%;
+  display: none;
+  color: white;
+  /* font-size: 12px; */
+  font-family: "Jura", sans-serif;
+  line-height: 20px;
+  z-index: 1;
+  padding: 5px 10px; }
+
+.menu li:hover .submenu {
+  display: block; }
+
+.espacio {
+  display: inline-block;
+  width: 5%;
+  margin-bottom: 7px;
+  border-style: outset; }
+
+.flex-container {
+  width: 1310px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
+  overflow: hidden; }
+
+.header__logo {
+  margin-top: 0px;
+  width: 209px;
+  height: 150px;
+  float: left; }
+
+.azul {
+  width: 850px;
+  height: 150px;
+  background-image: linear-gradient(to right, #99ccff, #000066); }
+
+.contenedor {
+  width: 250px;
+  height: 150px;
+  display: grid;
+  grid-template-rows: 150px;
+  grid-template-columns: 250px	250px	250px; }
+
+.contenedor:hover {
+  animation-play-state: paused; }
+
+.contenedor img {
+  width: 100%;
+  height: 150px;
+  animation: slider 9s infinite;
+  position: relative; }
+
+@keyframes slider {
+  from {
+    right: 0%; }
+  50% {
+    right: 100%; }
+  to {
+    right: 200%; } }
+
+.main__td {
+  background-color: #ccffff; }
+
+div {
+  color: black; }
+
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  padding: 10px;
+  content: 10px;
+  font-family: "Jura", sans-serif; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px; }
+
+.footer__section {
+  color: white;
+  background-color: black; }
+
+.padre {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 350px 350px;
+  grid-template-areas: "izquierda derecha"
+ "parrafo vivienda";
+  justify-items: center;
+  align-items: center; }
+
+.parrafo {
+  text-align: center;
+  grid-area: parrafo;
+  color: black; }
+
+.vivienda {
+  grid-area: vivienda; }
+
+.asidebarDerecha {
+  grid-area: derecha; }
+
+.asidebarIzquierda {
+  grid-area: izquierda; }
